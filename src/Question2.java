@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Question2 {
 
@@ -9,14 +10,29 @@ public class Question2 {
 		 * your program to stop the tank from over flowing.
 		 */
 
-		double tankCap = 0; // Tank Capacity is 100 liters
-		double bucketCap = 10; // Bucket capacity is 10 liters
+		double tankCap = 0; // capacity 100liters
+		   
+		   Scanner scan = new Scanner(System.in);
+		   System.out.println("Fill water");
+		   
+		  tankCap = scan.nextDouble();
+		  
+		  
+		  while(tankCap <=90){
+		     tankCap+=10;
+		    System.out.println("tank is:" + tankCap + "liters");
+		    System.out.println("left: " + (100 - tankCap));
+		      
+		      if (tankCap>=90 && tankCap<=100) {
+		      System.out.println("Tank may overflow");
+		    } 
+		      else if (tankCap<=10){
+		       System.out.println("Tank is empty");
+		      }
+		    
+		    break;
+		    }
 
-		while (tankCap <= 100) {
-			bucketCap += 10;
-			System.out.println("Tank Fill" + bucketCap);
-		}
-		System.out.println("Add more Water");
 
 	}
 
