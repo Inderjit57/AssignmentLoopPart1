@@ -9,24 +9,21 @@ public class Question3 {
 		 * 
 		 * Conditons or a prime number
 		 * x>1
-		 * x/x=1
-		 * x/1=x
+		 * x%x == 0
+		 * x%1 == 0 
 		 * prime number should only have two factors 
 		 * X can’t be divided Y =0 
 		 * If x divided by y the prime number should be greater then 0
 		 * 
-		 */
-		 
-		
-		
+		 */		
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter a number");
 		
 		int number1 = sc.nextInt();
-		int number2 = 0;
+		
 		while(number1 <=20) {
-			if (number1%number2 == 0) {
+			if (number1%1 == 0 && number1%number1 == 0 && number1>1) {
 				System.out.println("Prime number");
 				number1 += 1;
 			}
