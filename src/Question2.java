@@ -11,28 +11,25 @@ public class Question2 {
 		 */
 
 		double tankCap = 0; // capacity 100liters
-		   
-		   Scanner scan = new Scanner(System.in);
-		   System.out.println("Fill water");
-		   
-		  tankCap = scan.nextDouble();
-		  
-		  
-		  while(tankCap <=90){
-		     tankCap+=10;
-		    System.out.println("tank is:" + tankCap + "liters");
-		    System.out.println("left: " + (100 - tankCap));
-		      
-		      if (tankCap>=90 && tankCap<=100) {
-		      System.out.println("Tank may overflow");
-		    } 
-		      else if (tankCap<=10){
-		       System.out.println("Tank is empty");
-		      }
-		    
-		    break;
-		    }
 
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Fill water");
+
+		tankCap = scan.nextDouble();
+
+		while (tankCap <= 100) {
+			System.out.println("tank is at: " + tankCap + " liters");
+			System.out.println("left in the tank: " + (100 - tankCap) + " liters");
+
+			if (tankCap >= 90 && tankCap <= 100) {
+				System.out.println("Tank may overflow");
+			} 
+			else if (tankCap==0)
+			{
+				System.out.println("Tank is empty");
+			}
+			break;
+		}
 
 	}
 
