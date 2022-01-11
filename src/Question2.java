@@ -10,20 +10,22 @@ public class Question2 {
 		 * your program to stop the tank from over flowing.
 		 */
 
-		double tankCap = 0; // capacity 100liters
+		double bucketVolume = 0; // capacity 100liters
 
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Fill water"); // input for console
+		// input in the console will be from 10 to 100; 10,20,30....100.
+		// 1 bucket = 10liters
+		System.out.println("Enter bucket value in increments of 10"); 
 
-		tankCap = scan.nextDouble();
+		bucketVolume = scan.nextDouble();
 
-		while (tankCap <= 100) {
-			System.out.println("tank is at: " + tankCap + " liters");
-			System.out.println("left in the tank: " + (100 - tankCap) + " liters");
+		while (bucketVolume <= 100) {
+			System.out.println("tank is at: " + bucketVolume + " liters");
+			System.out.println("left in the tank: " + (100 - bucketVolume) + " liters");
 
-			if (tankCap >= 90 && tankCap <= 100) {
+			if (bucketVolume >= 90 && bucketVolume <= 100) {
 				System.out.println("Tank may overflow");
-			} else if (tankCap == 0) {
+			} else if (bucketVolume == 0) {
 				System.out.println("Tank is empty");
 			}
 			break;
