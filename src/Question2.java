@@ -15,7 +15,7 @@ public class Question2 {
 		Scanner scan = new Scanner(System.in);
 		// input in the console will be from 10 to 100; 10,20,30....100.
 		// 1 bucket = 10liters
-		System.out.println("Enter bucket value in increments of 10"); 
+		System.out.println("Enter bucket value in increments of 10. 1 bucket = 10liters. So its, 10,20,30....100"); 
 
 		bucketVolume = scan.nextDouble();
 
