@@ -20,7 +20,7 @@ public class Question3 {
 
 		// number which are not divisible by 2 and 3 
 		//
-		if (number % 2 != 0 && number % 3 != 0 && number > 1) {
+		if (number % 2 != 0 && number % 3 != 0 && number > 1 && number == 2) {
 			System.out.println(number + "  = Prime number");
 		} else {
 			System.out.println(number + "  = not Prime number");
