@@ -17,6 +17,8 @@ public class Question1 {
 		System.out.println("Enter the desired temperature value");
 
 		double temp = sc.nextDouble(); // Varaible for set temperature from console
+		
+		double currentTemp = 22;
 
 		System.out.println("Temperature is set to: " + temp + "*");
 
