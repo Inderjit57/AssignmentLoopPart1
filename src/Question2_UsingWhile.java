@@ -11,12 +11,12 @@ public class Question2_UsingWhile {
 		 */
 
 		Scanner scan = new Scanner(System.in);
-		
+
 		// input in the console will be from 10 to 100; 10,20,30....100.
 		// 1 bucket = 10liters
 		System.out.println("Enter bucket value in increments of 10; 1 bucket = 10liters. So enter: 10,20,30....100");
 
-		double bucketVolume = scan.nextDouble();	//Bucket capacity is 10liters 
+		double bucketVolume = scan.nextDouble(); // Bucket capacity is 10liters
 
 		while (bucketVolume <= 100) {
 			System.out.println("tank is at: " + bucketVolume + " liters");
