@@ -19,7 +19,7 @@ public class Question3 {
 		int number = sc.nextInt();
 
 		// number which are not divisible by 2 and 3
-		if (number % 2 != 0 && number % 3 != 0 && number > 1) {
+		if ((number/2) % 2 != 0 && number % 3 != 0 && number > 1) {
 			System.out.println("prime");
 		} else if (number == 2) { // 2 is the only even prime number
 			System.out.println("2 is a prime");
